@@ -4,10 +4,11 @@
     "github>1024pix/renovate-config:default.json"
   ],
   "enabled": true,
-  "includeForks": true,
+  "forkProcessing": "enabled",
   "minimumReleaseAge": "0",
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": [
         "^.buildpacks$"
       ],
